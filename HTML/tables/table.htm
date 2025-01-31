@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
+    <style>
+        i{
+            margin: 10px;
+        }
+        .won{
+            background-color: greenyellow;
+            /*display: inline-block;*/
+            padding: 3px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        .lost{
+            background-color: red;
+            display: inline-block;
+            padding: 3px;
+            font-size: 20px;
+            border-radius: 5px
+        }
+        .A{
+            background-color: gray;
+            display: inline-block;
+            padding: 3px;
+            font-size: 20px;
+            border-radius: 5px
+        }
+        th,td{
+            padding: 5px;
+            text-align: center;
+        }
+        tbody tr:nth-child(n){
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="5" background="beige" align="center">
+        <caption>
+            Asia cup point table 2024 Group A
+        </caption>
+        <thead>
+            <th bgcolor="blue">Pos</th>
+            <th colspan="2">Teams</th>
+            <th>Matches</th>
+            <th>Won</th>
+            <th>Lost</th>
+            <th>Tied</th>
+            <th>NR</th>
+            <th>Points</th>
+            <th>NRR</th>
+            <th colspan="2">Series form</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <i class="fi fi-pk"></i>
+                </td>
+                <td>Pakistan</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>3</td>
+                <td>+4.760</td>
+                <td>
+                    <span class="won">W</span>
+                </td>
+                <td>
+                    <span class="A">A</span>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <i class="fi fi-in"></i>
+                </td>
+                <td>India</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>3</td>
+                <td>+1.023</td>
+                <td>
+                    <span class="A">A</span>
+                </td>
+                <td>
+                    <span class="won">W</span>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <i class="fi fi-np"></i>
+                </td>
+                <td>Nepal</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>-3.760</td>
+                <td>
+                    <span class="lost">L</span>
+                </td>
+                <td>
+                    <span class="lost">L</span>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="12">Pos:Position;pld:played;pts:points;NRR:net run rate;</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

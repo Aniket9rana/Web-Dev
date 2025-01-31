@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Sign Up</title>
+</head>
+
+<body class="container-fluid">
+    <header class="d-flex justify-content-md-between text-white bg-primary p-3">
+        <div class="fw-bold fst-italic">Shopper.</div>
+        <div>
+            <span class="me-2">Home</span>
+            <span class="me-2">Shop</span>
+            <span class="me-2">Pages</span>
+            <span class="me-2">Blog</span>
+            <span>Docs</span>
+        </div>
+        <div>
+            <span class="me-2 bi bi-search-heart"></span>
+            <span class="me-2 bi bi-heart"></span>
+            <span class="bi bi-cart3"></span>
+        </div>
+    </header>
+
+    <section class=" row border border-3 border-success p-2 m-2">
+        <nav class="me-2 col border border-2 border-black p-2">
+            Nav
+        </nav>
+        <main class="me-2 col border border-2 border-black p-2">
+            Main
+        </main>
+        <aside class=" col border border-2 border-black p-2">
+            Aside
+        </aside>
+        
+    </section>
+    <form class="p-3 border border-3 border-primary w-25">
+        <h2>Register User</h2>
+        <div>
+            <label for="usrn"><strong>Username</strong></label><br>
+            <input type="text" name="usr" id="usrn" class="form-control">
+        </div>
+        <div>
+            <label for="pass"><strong>Password</strong></label><br>
+            <input type="password" name="pass" id="pass" class="form-control">
+        </div>
+        <div>
+            <label for="city"><strong>City</strong></label><br>
+            <select name="city" id="city" class="form-select">
+                <option value="bng">Bangalore</option>
+                <option value="hy">Hyderabad</option>
+            </select>
+        </div>
+        <div>
+            <label for="pr"><strong>PriceRange</strong></label><br>
+            <input type="range" name="usr" id="pr" class="form-range">
+        </div>
+        <div class="form-check form-switch">
+            <strong>Subscribe</strong><br>
+            <input type="checkbox" name="usr" id="sub" class="form-check-input"><label for="sub" class="form-check-label">Yes</label>
+        </div><br>
+        <button class="btn btn-success">Sign Up</button>
+    </form>
+</body>
+</html>

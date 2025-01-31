@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .labels{
+            font-weight: bold;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <form class="w-50">
+        <h2>Netflix Register</h2>
+        <div class="input-group bg-black p-3">
+            <input type="text" class="form-control me-2" placeholder="Search">
+            <button class="btn btn-danger" type="button">Get Started ></button>
+        </div>
+        <h2>Password</h2>
+        <div class="input-group">
+            <button class="btn btn-dark"><span class="bi bi-key"></span></button>
+            <input type="text" class="form-control">
+            <button class="btn btn-success"><span class="bi bi-check-square"></span></button>
+        </div>
+        <h2>price</h2>
+        <div class="input-group">
+            <button class="btn btn-dark"><span class="bi bi-currency-rupee"></span></button>
+            <input type="text" class="form-control">
+            <button class="btn btn-dark">.00</button>
+        </div>
+    </form>
+    <form action="" class="w-50 mt-5">
+        <h2>Register User</h2>
+        <dl class="row ms-3">
+            <dt class="col-2">Username</dt>
+            <dd class="col-10">
+                <input type="text" class="form-control" required>    
+            </dd>
+
+            <dt class="col-2">password</dt>
+            <dd class="col-10">
+                <input type="password" class="form-control" required>    
+            </dd>
+
+            <dt class="col-2">Age</dt>
+            <dd class="col-10">
+                <input type="number" class="form-control">    
+            </dd>
+            
+            <dt class="col-2">City</dt>
+            <dd class="col-10">
+                <select class="form-select">
+                    <option value="">Select City</option>
+                    <option value="bng">Bangalore</option>
+                    <option value="hy">Hyderabad</option>
+                </select>
+            </dd>
+        </dl>
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .border{
+            width: 70%;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 0 30px 0 rgba(0, 0, 0, 0.1);
+        }
+        .amt{
+            width: 40%;
+        }
+    </style>
+
+</head>
+<body class="container-fluid">
+    <div class="border border-2 p-4 mx-2 mt-5 rounded-3">
+        <h2>Tax Calculator</h2>
+        <form action="" class="cal mt-3 mx-auto">
+            <div class="row">
+                <div class="col d-flex">
+                    <label for="amount" class="form-label pt-1">Amount you need</label>
+                    <input type="text" id="amount" name="amt" class="form-control amt mx-2" value="&#8377;5,00,000">
+                </div>
+                <div class="col d-flex">
+                    <label for="year" class="form-label pt-1">for</label>
+                    <input type="text" id="year" name="year" class="form-control w-25 mx-2" value="5">
+                    <span class="pt-1">Years</span>
+                </div>
+                <div class="col d-flex">
+                    <label for="rate" class="form-label pt-1">Interest rate</label>
+                    <input type="text" id="rate" name="rate" class="form-control w-25 mx-2" value="10.85">
+                    <span class="pt-1">%</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <input type="range" id="amount" name="amt" class="form-range" value="500000" min="50000" max="4000000">
+                    <label for="" class="form-label d-flex justify-content-between">
+                        <div>&#8377;50,000</div>
+                        <div>&#8377;40,00,000</div>
+                    </label>
+                </div>
+                <div class="col-4">
+                    <input type="range" id="amount" name="amt" class="form-range" value="5" min="1" max="5">
+                    <label for="" class="form-label d-flex justify-content-between">
+                        <div>1 Year</div>
+                        <div>5 Year</div>
+                    </label>
+                </div>
+                <div class="col-4">
+                    <input type="range" id="amount" name="amt" class="form-range" value="10.87" min="10.85" max="21">
+                    <label for="" class="form-label d-flex justify-content-between">
+                        <div>10.85 %</div>
+                        <div>21 %</div>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-primary">CALCULATE</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

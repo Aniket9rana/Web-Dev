@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Primary Selectors */
+        .con h1{
+            color: red;
+            background-color: black;
+        }
+        .con #sample{
+            color: blue;
+            text-align: center;
+        }
+        .con .core{
+            color: beige;
+            padding: 5px;
+        }
+
+        /* Rational Selectors */
+        .container > p{
+            color:red;
+            font-family: Brush script mt;
+        }
+        h1 + p{
+            color: green;
+        }
+
+        /* Attribute selector */
+        input[type=button]{
+            background: url(https://imgs.search.brave.com/3mgXcM4JuLE75iioV_ohNdkQUj36VeVa7PC4sgJy-e4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5LzYwLzkyLzIz/LzM2MF9GXzk2MDky/MjMyNV9Renp0emlr/cXllU3dsQWxxUFd5/NkZjSzdpOTRiV2t2/bi5qcGc);
+            height: 200px;
+            margin-bottom: 20px;
+            width: 500px;
+        }
+        p[id]{
+            color: green;
+        }
+
+        p[class^="Effects"]{
+            color: blue;
+        }
+    </style>
+    <script>
+        function setEffect() {
+            console.log("");
+            document.querySelector("h2").style.color="aqua";
+            document.querySelector("h2").style.fontFamily="Brush Script MT";
+        }
+        function resetEffect() {
+            console.log("");
+            document.querySelector("h2").style.color="black";
+            document.querySelector("h2").style.fontFamily="Times New Roman";
+        }
+    </script>
+</head>
+<body>
+    <div class="con">
+        <h1 id="sample" class="core">WebTechnologies</h1>
+        <h1 class="core">HTML</h1>
+        <h1>CSS</h1>
+        <h1>JAVASCRIPT</h1>
+    </div>
+
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>para 1</p>
+        <img src="../HTML/rps/paper.jpg" alt="">
+        <p id="p2">para 2</p>
+        <p>para 3</p>
+        <p id="p4">para 4</p>
+    </div>
+    <input type="button" value="submit">
+    <input type="button" value="reset">
+
+    <p class="Effects">Para 1</p>
+    <p class="paraEffects">Para 1</p>
+    <p class="EffectsPara">Para 1</p>
+    <p class="Effects-Para">Para 1</p>
+    <p class="Para-Effects">Para 1</p>
+    <p class="Effects Para">Para 1</p>
+
+    <h2 onmouseover="setEffect()" onmouseout="resetEffect()">Welcome to JS</h2>
+</body>
+</html>

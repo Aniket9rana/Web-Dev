@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <form onsubmit="welcomeMessage();return false;">
+        name : <input type="text" id="name"><br>
+        age: <input type="number" id="age"><br>
+        <button type="submit">submit</button>
+        <button type="menu" onclick="showInfo();" value="showInfo">Showinfo</button><br>
+        <textarea id="textarea"></textarea>
+    </form>
+    <script>
+        function welcomeMessage() {
+            name =document.getElementById("name").value;
+            age = document.getElementById("age").value;
+            if(age<18){
+                alert("you are not able to vote");
+            }
+            else{
+                alert("you are able to vote");
+            }
+        }
+        function showInfo(){
+            document.getElementById("textarea").innerHTML = name +"\n"+ age;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="display: none;" id="dn">Display option : display:None</h1>
+    <br><br>
+    <hr>
+    <br><br>
+    <h1 style="visibility: hidden;" id="vh">Display option : visibility:hidden</h1>
+
+    <script>
+        var dn = document.getElementById("dn");
+        var vh = document.getElementById("vh");
+
+        console.log("Is display none in DOM :: ",dn ? "yes" : "no");
+        console.log("Is visibility hidden in DOM", vh ?"yes" : "no");
+        console.log("in display height :: ",dn.offsetHeight);
+        console.log("in visibility height :: ",vh.offsetHeight);
+    </script>
+</body>
+</html>

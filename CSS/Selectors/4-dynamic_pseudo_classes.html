@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setEffect() {
+            console.log("");
+            document.querySelector("h2").style.color="aqua";
+            document.querySelector("h2").style.fontFamily="Brush Script MT";
+        }
+        function resetEffect() {
+            console.log("");
+            document.querySelector("h2").style.color="black";
+            document.querySelector("h2").style.fontFamily="Times New Roman";
+        }
+    </script>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        img{
+            width: 200px;
+            transition: 3s;
+        }
+        img:active{
+            width: 400px;
+            transform: 3s;
+        }
+    </style>
+</head>
+<body>
+    <h2 onmouseover="setEffect()" onmouseout="resetEffect()">Welcome to JS</h2>
+    <img src="https://imgs.search.brave.com/3mgXcM4JuLE75iioV_ohNdkQUj36VeVa7PC4sgJy-e4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5LzYwLzkyLzIz/LzM2MF9GXzk2MDky/MjMyNV9Renp0emlr/cXllU3dsQWxxUFd5/NkZjSzdpOTRiV2t2/bi5qcGc" alt="">
+
+</body>
+</html>

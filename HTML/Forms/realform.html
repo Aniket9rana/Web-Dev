@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        form{
+            border: 1px solid #000;
+            padding: 0 0 0 20px;
+        }
+        label{
+            font-weight: bold;
+        }
+        .error-field{
+            color: red;
+        }
+        
+        input:valid ~ div{
+            display: none;
+        }
+        textarea:read-only{
+            cursor: progress;
+        }
+        textarea:disabled{
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <form action="" class="w-50 pt-3 pb-3 mt-5">
+        <h2>🫂User Login</h2>
+        <div class="login-username w-75">
+            <label for="Username">Username</label><span class="text-danger">*</span>
+            <input type="text" class="form-control" name="txtusername" id="name" required>
+            <div class="error-field">
+                INVALID USERNAME
+            </div>
+        </div><br>
+        <div class="login-password w-75">
+            <label for="Password">Password</label><span class="text-danger">*</span>
+            <input type="text" class="form-control" name="txtusername" id="pass" required>
+            <div class="error-field">
+                INVALID PASSWORD
+            </div>
+        </div><br>
+        <button type="print" class="btn btn-success">Submit</button>
+        <button class="btn btn-danger">reset</button>
+        <button onclick="showInfo();" value="showInfo">Showinfo</button><br>
+
+    </form><br>
+    <h3>Textarea</h3><br>
+    <textarea name="" id="" rows="4" cols="40" disabled>
+        Our terms and Services
+    </textarea>
+    <textarea name="" id="textarea" value="showinfo" rows="4" cols="40">
+    </textarea>
+    <script>
+        name =document.getElementById("name").value;
+        age = document.getElementById("pass").value;
+        function showInfo(){
+            document.getElementById("textarea").innerHTML = name +"\n"+ pass;
+        }
+    </script>
+</body>
+</html>

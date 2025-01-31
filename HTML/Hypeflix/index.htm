@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Hypeflix</title>
+    <style type="text/css">
+        body {
+            background-image: url(https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .shade {
+            background: rgba(0, 0, 0, .8);
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100vw;
+            margin: -8px;
+        }
+
+        header {
+            height: 20vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main {
+            height: 80vh;
+            width: 100vw;
+            margin: -2px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        select {
+            background-color: rgba(0, 0, 0, .5);
+            color: #fff;
+            border-radius: 10px;
+            padding: 3px;
+            font-size: 20px;
+        }
+
+        .title {
+            color: red;
+            font-size: 50px;
+            font-weight: bold;
+            margin: 10px 0 0 200PX;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn1 {
+            color: #fff;
+            background-color: red;
+            font-size: 20px;
+            border-radius: 10px;
+            margin: 20px 200px 0 10px;
+        }
+
+        .btn1:hover {
+            color: red;
+            background-color: white;
+        }
+
+        .text {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .btn2 {
+
+            color: #fff;
+            background-color: red;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        .btn2:hover {
+            color: red;
+            background-color: #fff;
+        }
+
+        #email {
+            background-color: rgba(0, 0, 0, .5);
+            font-size: 26px;
+            color: red;
+            border-radius: 10px;
+            padding: 3px;
+        }
+
+        footer{
+            background-color: rgba(0, 0, 0, .8);
+            height: 60vh;width: 100vw;
+            color: #fff;
+            bottom: 0px;
+            border-top-style: curve;
+        }
+        details span{
+            display: block;
+            width: 100px;
+            margin: 0 200px 10px 0;
+            padding: 3px;
+            color: #fff;background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shade">
+
+        <header class="header">
+            <div class="title">HYPEFLIX</div>
+            <div>
+                <select name="language">
+                    <option lang="en" label="English" value="en-IN">English</option>
+                    <option lang="hi" label="Hindi" value="hi-IN">Hindi</option>
+                </select>
+                <a href="https://www.netflix.com/in/login"><Button class="btn1">Sign In</Button></a>
+            </div>
+        </header>
+        <main>
+            <div>
+                <div class="text">Unlimited movies,<br>TV shows and more</div><br>
+                <div class="txt">Strats at &#8377 149.Cancel at any time.</div><br><br>
+                <div class="login">
+                    <div class="txt">Ready to Watch? Enter your email to create or restart your membership.</div><br>
+                    <input type="email" name="email" placeholder="Email address" id="email">
+                    <button class="btn2">Get Started ></button>
+                </div>
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>
