@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      .box{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        margin-top: 100px;
+    }
+    @keyframes zoomeffect {
+        0%{
+            transform:translateY(0);
+        }
+
+        50%{
+            transform: translateY(-50px);
+        }
+        
+        100%{
+            transform:translateY(0);
+        }
+        
+    }
+
+    .box:hover{
+        animation: zoomeffect 3s linear 2s infinite;
+    }
+</style>
+<body>
+    <div class="box">
+        KeyFrames
+    </div>
+</body>
+</html>
