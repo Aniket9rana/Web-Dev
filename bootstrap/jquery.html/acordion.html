@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<style>
+   
+</style>
+<body class="container-fluid bg-danger">
+   <header>
+    <img src="../../public/images/kfctop.png" alt="" class="w-100">
+   </header>
+    <div class="accordion bg-danger" id="accordionExample">
+        <div class="accordion-item bg-danger rounded">
+          <h2 class="accordion-header">
+            <button class=" btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Customer Details
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <label for=""><strong>Customername</strong></label>
+             <input type="text" class="w-100 form-control">
+             <label for=""><strong>Customer MobileNumber</strong></label>
+             <input type="text" class="w-100 form-control">
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-danger mt-2 border-top rounded">
+          <h2 class="accordion-header">
+            <button class="btn btn-danger w-100 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Select your Meal
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body d-flex justify-content-around h-50">
+              <div class="text-center">
+                   <img src="../../public/images/omgb1.png" alt="" class="" width="300px" height="300px"><br>
+                   <input type="radio" name="meal" class=""><strong> OMG BURGER</strong>
+              </div>
+              <div class="text-center ">
+                <img src="../../public/images/omgb2.png" alt="" class="" width="300px" height="300px"><br>
+                <input type="radio" name="meal" class=""><strong> OMG BURGER</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-danger mt-2 border-top rounded">
+          <h2 class="accordion-header">
+            <button class="btn btn-danger w-100 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Select Add-On
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body d-flex justify-content-around h-50">
+                <div class="text-center">
+                     <img src="../../public/images/hotwings.png" alt="" class="" width="300px" height="300px"><br>
+                     <input type="radio" name="addon"  class=""><strong> OMG BURGER</strong>
+                </div>
+                <div class="text-center ">
+                  <img src="../../public/images/krusher.png" alt="" class="" width="300px" height="300px"><br>
+                  <input type="radio" name="addon"  class=""><strong> OMG BURGER</strong>
+                </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="m-2 d-flex justify-content-center ">
+      <div>
+        <button class="btn btn-warning w-100 " data-bs-toggle="modal" data-bs-target="#placeholder">Place Order</button>
+    </div>
+    <div class="modal" id="placeholder">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h2><span class=" fw-bold">Your Bill Summary </span></h2>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                   <dl>
+                    <dt>Customer Name</dt>
+                    <dt>Mobile</dt>
+                    <dt>Meal</dt>
+                    <dt>Add On's</dt>
+                    <dt>Total</dt>
+                   </dl>
+                </div>
+                <div class="modal-footer">
+                        <button class="btn btn-warning">Confirm</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>  
+</body>
+</html>

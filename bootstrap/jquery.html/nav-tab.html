@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="m-5">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Basic Deals</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Preview</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Features</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Ratings</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <dl>
+                    <dt class="fw-bolder fs-6">Realme</dt>
+                    <dd>IPHONE-35% OFF</dd>
+                    <dt>$ 1900/-</dt>
+                </dl>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <img src="data:image/jpeg;base64,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" alt="">
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                <ul>
+                    <li>8 GB RAM|256 GB ROM</li>
+                    <li>17.2 cm (6.77 inch) Full HD+ AMOLED Display</li>
+                    <li>50MP + 8MP | 16MP Front Camera</li>
+                    <li>5500 mAh Battery</li>
+                    <li>Snapdragon 7 Gen 3 Processor</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                <span>4.3 </span><span class="bi bi-star-fill text-success"></span><span> Ratings & <strong>5000 Reviews</strong></span>
+            </div>
+          </div>
+          
+    </div>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>  
+</body>
+</html>
